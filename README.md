@@ -1,2 +1,6 @@
-# Precision matrix estimation under nonnegative partial correlations, also known as MTP2, using fast projected Newton-like algorithm
+# Precision matrix estimation under nonnegative partial correlations
+
+This MATLAB package includes implementations of fast projected Newton-like algorithm presented in [1]-[2]. The licensing information is available in LICENSE.txt
+
+The algorithm aims to estimate precision matrices in multivariate Gaussian distributions where all partial correlations are nonnegative, also known as multivariate totally positive of order two (MTP2).
 
