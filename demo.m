@@ -1,6 +1,6 @@
-%% Fast Projected Newton-like Method for Precision Matrix Estimation 
+%% Fast Projected Newton-like Method for Precision Matrix Estimation
 %% with Nonnegative Partial Correlations
-  
+
 close all;
 clear;
 clc;
@@ -22,7 +22,7 @@ Sigma = inv(Mtrue);     % covariance matrix
 
 %% Generate sample covariance matrix
 Y = mvnrnd(Mu,Sigma,n);
-S = Y'*Y/n;
+S = Y'*Y/n;             % sample covariance matrix
 
 %% Generate weighted regularization parameters
 alpha = 0.008;
