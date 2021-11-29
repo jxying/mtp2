@@ -28,9 +28,7 @@ function [out] = solver_fpn(S, lmbd, opts)
 %                'relobj_itr'  : exists if 'X_opt' exists, store the relative error 
 %                               of the objective function value for each iteration, i.e., |fk - fopt|/|fopt|     
 %                'relerr_iter' : exists if 'X_opt' exists, store the relative error 
-%                               of each iteration, i.e., ||X_k - X_opt||_F / ||X_opt||_F
-%                               
-%                               
+%                               of each iteration, i.e., ||X_k - X_opt||_F / ||X_opt||_F 
 
 %% Initialize CPU time    
 t0 = tic;
