@@ -1,6 +1,6 @@
-%% Fast Projected Newton-like Method for Precision Matrix Estimation 
+%% Fast Projected Newton-like Method for Precision Matrix Estimation
 %% with Nonnegative Partial Correlations
-  
+
 close all;
 clear;
 clc;
