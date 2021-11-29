@@ -22,7 +22,7 @@ Sigma = inv(Mtrue);     % covariance matrix
 
 %% Generate sample covariance matrix
 Y = mvnrnd(Mu,Sigma,n);
-S = Y'*Y/n;
+S = Y'*Y/n;             % sample covariance matrix
 
 %% Generate weighted regularization parameters
 alpha = 0.008;
