@@ -53,7 +53,6 @@ if nargin < 3
    opts.tol      = 1e-6;
 end
 
-
 if isfield(opts,'edge')
     flag_edge = 1;
     edgeset   = find(~opts.edge); 
@@ -105,7 +104,6 @@ if flag_opt
     rel_err      = norm(X_opt - X, 'fro')/norm(X_opt, 'fro');
     relerr_iter  = [relerr_iter; rel_err];
 end
-
 
 %%
 grad  = @(T) -inv(T) + S - Lamb;
