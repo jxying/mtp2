@@ -2,7 +2,7 @@ function [out] = solver_fpn(S, lmbd, opts)
 % Estimate precision matrices with nonnegative partial correlations 
 % using fast projected Newton-like algorithm
 
-% Inouts:
+% Inputs:
 %    'S'    : sample covariance matrix
 %    'lmbd' : regularization parameter (a scalar for L1 norm; a matrix for weighted L1 norm) 
 %    'opts' : stopping criterion options, passed as a structure
