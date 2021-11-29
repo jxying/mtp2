@@ -1,5 +1,5 @@
 function out = generate_weighted_lambda(S, alpha, tau, epfs, opts)
-%% generate the weighted regularization parameter
+% generate the weighted regularization parameter
 % lamba_ij = alpha / ( | X_ij + epfs |^tau ), for any i \neq j;
 % lambda_ij = 0, for any i = j;
 % X is the maximum likelihood estimator
@@ -31,8 +31,8 @@ end
 
 opts.display = 0;
 
+%% compute the maximum likelihood estimator
 lambda = 0;
-
 mle = solver_fpn(S, lambda, opts);
 initial = abs(mle.X_est);
 
