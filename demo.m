@@ -34,13 +34,3 @@ opts.tol      = 1e-6;
 out           = solver_fpn(S, lmbd, opts);
 X_est         = out.X_est;  % estimated precision matrix
 run_time      = out.time;   % run time
-
-
-[Omega, Sigma, conv] = solver_bcd(S, lmbd, 1e-6, opts);
-
-
-
-
-
-
-
