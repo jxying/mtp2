@@ -39,6 +39,5 @@ initial = abs(mle.X_est);
 H = 1./((initial + epfs).^tau);
 H_off = H - diag(diag(H));
 out = alpha*H_off;
-
 end
 
