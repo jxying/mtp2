@@ -6,6 +6,6 @@ This MATLAB package includes implementations of fast projected Newton-like algor
 
 The algorithm aims to estimate precision matrices in multivariate Gaussian distributions where all partial correlations are nonnegative, also known as multivariate totally positive of order two (MTP2).
 
-To install the package:
+To run the algorithm:
 (1) Download the source files.
 (2) Run 'demo.m'
