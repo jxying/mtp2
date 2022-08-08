@@ -14,21 +14,19 @@ if ~isfield(opts,'tol')
 end
 
 stop = 0;
-reason=[];
+converge = 0;
 
 if toc(t0) > opts.max_time
-    stop = 1;
-    converge = 0;      % reason = 0: maximum cpu time exceeded
+    stop = 1;     % maximum cpu time exceeded  
 end
 
 if iter > opts.max_iter
-    stop = 1;
-    converge = 0;      % reason = 1: maximum iterations exceeded
+    stop = 1;     % maximum iterations exceeded    
 end
 
 if norm(x - y,'fro')/norm(y,'fro')< opts.tol
-   stop = 1;
-   converge = 1;       % reason = 2: condition on successive iterations holds
+   stop = 1;      % condition on successive iterations holds
+   converge = 1; 
 end
 
 check.stop = stop;
