@@ -29,6 +29,7 @@ function [out] = solver_fpn(S, lmbd, opts)
 %                               of the objective function value for each iteration, i.e., |fk - fopt|/|fopt|     
 %                'relerr_iter' : exists if 'X_opt' exists, store the relative error 
 %                               of each iteration, i.e., ||X_k - X_opt||_F / ||X_opt||_F 
+%                'converge'    : "1": algorithm converges; "0" algorithm does not converge.
 
 %% Initialize CPU time    
 t0 = tic;
@@ -206,4 +207,5 @@ out.objective  = objnew;
 out.obj_itr    = obj_iter;
 out.time_itr   = time_iter;
 out.iterate    = iter;
+out.converge.  = check.converge;
 end
