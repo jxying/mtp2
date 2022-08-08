@@ -207,5 +207,5 @@ out.objective  = objnew;
 out.obj_itr    = obj_iter;
 out.time_itr   = time_iter;
 out.iterate    = iter;
-out.converge.  = check.converge;
+out.converge   = check.converge;
 end
