@@ -18,18 +18,18 @@ reason=[];
 
 if toc(t0) > opts.max_time
     stop = 1;
-    reason = 0;      % reason = 0: maximum cpu time exceeded
+    converge = 0;      % reason = 0: maximum cpu time exceeded
 end
 
 if iter > opts.max_iter
     stop = 1;
-    reason = 1;      % reason = 1: maximum iterations exceeded
+    converge = 0;      % reason = 1: maximum iterations exceeded
 end
 
 if norm(x - y,'fro')/norm(y,'fro')< opts.tol
    stop = 1;
-   reason = 2;       % reason = 2: condition on successive iterations holds
+   converge = 1;       % reason = 2: condition on successive iterations holds
 end
 
 check.stop = stop;
-check.reason = reason;
+check.converge = converge;
