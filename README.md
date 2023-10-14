@@ -1,5 +1,5 @@
 # mtp2 
-Matlab implementation of fast projected Newton-like (FPN) method [1] for learning large-scale MTP2 Gaussian graphical models. The problem can be formulated as
+Matlab implementation of fast projected Newton-like (FPN) method [1] for learning MTP2 Gaussian graphical models. The problem can be formulated as
 
 $$
 \mathsf{minimize}  -\log\det\left(\boldsymbol{\Theta}\right)+\left\langle \boldsymbol{\Theta},\mathbf{S}\right\rangle +\sum_{i\neq j}\Lambda_{ij}\left|\Theta_{ij}\right|, 
