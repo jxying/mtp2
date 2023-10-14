@@ -1,10 +1,15 @@
-# Precision matrix estimation under nonnegative partial correlations
+# mtp2-bbd-Pypkg 
+Matlab implementation of fast projected Newton-like (FPN) method [1] for learning large-scale MTP2 Gaussian graphical models and its accleration by introducing bridge-block decomposition [2]. The problem can be formulated as
 
-This MATLAB package includes implementations of fast projected Newton-like algorithm proposed in [1]. The licensing information is available in LICENSE.txt
+$$
+\mathsf{minimize}  -\log\det\left(\boldsymbol{\Theta}\right)+\left\langle \boldsymbol{\Theta},\mathbf{S}\right\rangle +\sum_{i\neq j}\Lambda_{ij}\left|\Theta_{ij}\right|, 
+$$
 
-[1] J.-F. Cai, J. V. de Miranda Cardoso, D. P. Palomar, and J. Ying, "Fast Projected Newton-like Method for Precision Matrix Estimation under Total Positivity", (https://arxiv.org/abs/2112.01939), arXiv:2112.01939, 2021.
+subject to  
 
-The algorithm aims to estimate precision matrices in multivariate Gaussian distributions where all partial correlations are nonnegative, also known as multivariate totally positive of order two (MTP2).
+$$ 
+	\boldsymbol{\Theta}\succ\mathbf{0}, \text{ and } \Theta_{ij}\leq0,\forall i\neq j
+$$ 
 
 To run the code:
 (1) Download the source files.
