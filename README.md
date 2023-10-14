@@ -15,6 +15,8 @@ $$
 (1) Download the source files.
 (2) Run 'demo.m'
 
+You may consider using the FPN solver with [bridge-block decomposition](https://github.com/jxying/mtp2-bbd) for learning large-scale MTP2 Gaussian graphical models. The bridge-block decomposition is designed to reduce the computational and memory costs of existing algorithms like FPN, especially in cases involving large-scale data. 
+
 ## References
 
 [1] J.-F. Cai, J. V. de Miranda Cardoso, D. P. Palomar, and J. Ying, "Fast Projected Newton-like Method for Precision Matrix Estimation under Total Positivity", Neural Information Processing Systems (NeurIPS), New Orleans, LA, USA, Dec. 2023.
