@@ -15,7 +15,7 @@ $$
 (1) Download the source files.
 (2) Run 'demo.m'
 
-You may consider using the FPN solver with [bridge-block decomposition](https://github.com/jxying/mtp2-bbd) for learning large-scale MTP2 Gaussian graphical models. The bridge-block decomposition is designed to reduce the computational and memory costs of existing algorithms like FPN, especially in cases involving large-scale data. 
+You may consider using the FPN solver with [bridge-block decomposition](https://github.com/jxying/mtp2-bbd) for learning large-scale MTP2 Gaussian graphical models. The bridge-block decomposition is designed to reduce the computational and memory costs of existing algorithms like FPN, particularly in the context of large-scale data.
 
 ## References
 
