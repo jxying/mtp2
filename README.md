@@ -19,4 +19,4 @@ You may consider using the FPN solver with [bridge-block decomposition](https://
 
 ## References
 
-[1] J.-F. Cai, J. V. de Miranda Cardoso, D. P. Palomar, and J. Ying, "Fast Projected Newton-like Method for Precision Matrix Estimation under Total Positivity", Neural Information Processing Systems (NeurIPS), New Orleans, LA, USA, Dec. 2023.
+[1] J.-F. Cai, J. V. de Miranda Cardoso, D. P. Palomar, and J. Ying, "Fast Projected Newton-like Method for Precision Matrix Estimation under Total Positivity", Advances in Neural Information Processing Systems (NeurIPS), New Orleans, LA, USA, Dec. 2023.
