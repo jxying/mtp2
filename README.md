@@ -13,7 +13,7 @@ $$
 
 ## To run the code:
 (1) Download the source files.
-(2) Run 'demo.m'
+(2) Run 'demo.m' in MATLAB.
 
 You may consider using the FPN solver with [bridge-block decomposition](https://github.com/jxying/mtp2-bbd) for learning large-scale MTP2 Gaussian graphical models. The bridge-block decomposition is designed to reduce the computational and memory costs of existing algorithms like FPN, particularly in the context of large-scale data.
 
